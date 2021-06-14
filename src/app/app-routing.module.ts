@@ -9,10 +9,11 @@ import { PlaceFitnessTrainerAppointmentComponent } from './place-fitness-trainer
 const routes: Routes = [
   { path: "landing-page", component: LandingPageComponent },
   { path: "place-fitness-trainer-appointment", component: PlaceFitnessTrainerAppointmentComponent },
-  { path: "view-appointment",component: ViewAppointmentComponent },
-  { path: "contact-us",component: ContactUsComponent },
+  { path: "view-appointment", component: ViewAppointmentComponent },
+  { path: "contact-us", component: ContactUsComponent },
   { path: "**", redirectTo: "landing-page" }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
