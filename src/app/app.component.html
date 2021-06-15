@@ -1,0 +1,94 @@
+<div class="logo ">
+  <nav class="navbar navbar-light blue lighten-4 jumbotron">
+    <span class="navbar-brand ">
+      
+      
+      <H2 class="display-4">Welcome to FITNESS APP</H2></span>
+  </nav>
+
+</div>
+
+<!-- <nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+  <button type="button" class="btn btn-primary btn-lg" (click)="landingpage()">Home</button><br>
+  <button type="button" class="btn btn-primary btn-lg" (click)="placeAppointment()">Place Appointment</button><br>
+  <button type="button" class="btn btn-primary btn-lg" (click)="viewAppointment()">View Appointment</button><br>
+  <button type="button" class="btn btn-primary btn-lg" (click)="contactUspage()">Contact Us</button>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/landing-page">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link px-10" href="/place-fitness-trainer-appointment">Place Appointment <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/view-appointment">View Appointment</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact-us">Contact Us</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container-fluid bg-danger">
+
+
+  <div class="row">
+    <div class="col-4">
+    
+      <router-outlet></router-outlet>      
+    </div>
+    <div class="col-8">
+      
+    </div>
+
+
+  </div>
+
+
+</div>
+
+<br>
+
+
+
+<div class="sidebar">
+  <div class="row">
+    <div class="col-2">
+      <div class="nav flex-column nav-pills"  aria-orientation="vertical">
+        <br>
+        <br>
+        <button class="btn btn-secondary button1" (click)="landingpage()">Home</button><br>
+        <button class="btn btn-secondary button1"(click)="placeAppointment()">Place Appointment</button><br>
+        <button class="btn btn-secondary button1"(click)="viewAppointment()">View Appointment</button><br>
+        <button class="btn btn-secondary button1"(click)="contactUspage()">Contact Us</button><br>
+        
+      </div>
+      
+    </div>
+
+    <router-outlet></router-outlet>
+  </div>
+    <span>
+      <hr>
+       
+    
+      
+    
+    </span>
+  </div>
+ 
+
+
+
+
+
